@@ -1,9 +1,4 @@
 import { AppBar, Switch, Toolbar, Typography } from "@mui/material";
-import { useState } from "react";
-
-// interface Props{
-//     palettType : string
-// }
 
 interface Props{
     darkTheme : boolean,
@@ -12,12 +7,6 @@ interface Props{
 
 
 export default function Header({darkTheme, changeTheme}:Props) {
-    const isDarkMode = true;
-    // [isDarkMode, setDarkMode]= useState(false);
-    // function changeTheme(){
-    //     // palettType = !palettType;
-    //     palettType = isDarkMode ? 'dark' : 'light';
-    // }
 
     return (
 
