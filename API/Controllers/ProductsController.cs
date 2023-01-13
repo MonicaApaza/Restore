@@ -9,9 +9,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class ProductsController: ControllerBase
+
+    public class ProductsController : BaseApiControlller
     {
         private readonly StoreContext _context;
         public ProductsController(StoreContext context)

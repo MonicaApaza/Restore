@@ -11,7 +11,7 @@ export default function ProductDetails() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/Products/${id}`)
+        axios.get(`http://localhost:5000/api/Products/${id}`)
             .then(response => setProduct(response.data))
             .catch(error => {
                 console.log(error);
