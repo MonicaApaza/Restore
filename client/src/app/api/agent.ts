@@ -25,7 +25,8 @@ const TestErrors = {
 }
 
 const agent = {
-    Catalog
+    Catalog,
+    TestErrors
 }
 
 export default agent;
