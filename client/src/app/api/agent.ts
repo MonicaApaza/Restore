@@ -5,10 +5,10 @@ axios.defaults.baseURL = "http://localhost:5000/api/";
 const responseBody = (response: AxiosResponse) => response.data;
 
 const requests = {
-    get: (url: string) => axios.get(url).then(responseBody),
-    post: (url: string, body: {}) => axios.post(url, body).then(responseBody),
-    put: (url: string, body: {}) => axios.put(url, body).then(responseBody),
-    delete: (url: string) => axios.delete(url).then(responseBody)
+    get: (url: string) => axios.get(url).then(response => responseBody(response)),
+    post: (url: string, body: {}) => axios.post(url, body).then(response => responseBody(response)),
+    put: (url: string, body: {}) => axios.put(url, body).then(response => responseBody(response)),
+    delete: (url: string) => axios.delete(url).then(response => responseBody(response))
 }
 
 const Catalog = {
